@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: "Krub", sans-serif;
+    font-size: 26px;
+}
+:root {
+    --txt1: #ffffff;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --oscuro: #212121;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    font-size: 62.5%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--oscuro);
+}
+.navbar_items {
+    margin: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--txt1);
+}
+header {
+    height: 500px;
+    width: 100%;
+    background-image: url(../Assets/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--txt1);
+}
+.header_fondo {
+    background-color: #21212162;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header_fondo h1 {
+    padding: 4rem;
+    font-size: 5rem;
+}
+.header_fondo h2 {
+    padding: 4rem;
+    font-size: 2rem;
+}
+.header_fondo p {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.header_btn {
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: #757575;
+    margin-top: 2rem;
+    padding: 10px;
+}
+.section_Nosotros {
+    width: 80%;
+    margin: 0px auto;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: linear-gradient(to bottom, #2c3e50ca, #bdc3c7);
+}
+.section_Nosotros h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--txt1);
+}
+.article_Nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.article_img {
+    width: 70%;
+    height: 500px;
+    background-image: url(../Assets/Nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem;
+}
+.article_info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.article_info h3 {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.article_info p {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.sombra {
+    background-color: white;
+    padding: 4rem;
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.866);
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+.article_info_iconos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_Servicios {
+    width: 80%;
+    margin: 0px auto;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: linear-gradient(to bottom, #2c3e50ca, #bdc3c7);
+    margin-top: 4rem;
+}
+.section_Servicios h2 {
+    text-align: center;
+    color: var(--txt1);
+    font-size: 4rem;
+}
+.article_servicios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    color: var(--txt1);
+    background-color: var(--oscuro);
+    text-align: center;
+}
+footer h2 {
+    font-size: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_redes {
+    margin: auto;
+    width: 33%;
+}
+.footer_redes img {
+    width: 40px;
+}
+.footer_redes p {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    margin: auto;
+    padding-top: 2rem;
+    background-color: var(--gris);
+    border-radius: 5px;
+}
+.formulario .fila {
+    align-items: center;
+
+    width: auto;
+    padding: 5px;
+}
+.fila input,
+textarea {
+    font-size: 1.5rem;
+    width: 100%;
+}
+textarea {
+    min-height: 280px;
+    max-width: 280px;
+    min-width: 263px;
+}
+.footer_ubicacion {
+    width: 30%;
+}
+iframe {
+    width: 80%;
+}
