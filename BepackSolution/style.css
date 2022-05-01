@@ -134,7 +134,7 @@
 }
 
 #Nosotros {
-      height: 600px;
+      min-height: 600px;
       background-color: var(--color);
       display: flex;
       flex-direction: column;
@@ -157,7 +157,7 @@
 
 .nosotros_Servicios {
       width: 80%;
-      height: 400px;
+      min-height: 400px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
