@@ -142,16 +142,17 @@
       align-items: center;
 }
 .nosotros_title h2 {
-      font-size: 25px;
+      font-size: 30 px;
       font-weight: bold;
       color: #c89c4b;
       text-align: center;
 }
 .nosotros_title p {
-      font-size: 12 px;
+      font-size: 18px;
       font-weight: bold;
       color: var(--text_primary);
       text-align: center;
+      margin: 0 40px;
 }
 
 .nosotros_Servicios {
@@ -168,13 +169,13 @@
 .Nosotros_Servicios_card {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       width: 200px;
 }
 .servicios_card_title h2 {
       color: var(--text_primary);
-      font-size: 18px;
+      font-size: 24px;
       font-weight: bold;
       text-align: center;
 }
