@@ -141,6 +141,9 @@
       justify-content: space-evenly;
       align-items: center;
 }
+.nosotros_title {
+      margin: 80px 0;
+}
 .nosotros_title h2 {
       font-size: 30 px;
       font-weight: bold;
@@ -156,25 +159,37 @@
 }
 
 .nosotros_Servicios {
-      width: 80%;
-      min-height: 400px;
+      width: 90%;
+      min-height: 500px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      align-items: center;
       text-align: center;
       background-color: var(--color-secondary);
       border-radius: 20px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
+.shadow {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
 .Nosotros_Servicios_card {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       width: 200px;
+      border-radius: 20px;
+      height: 400px;
+      cursor: pointer;
+      transition: 0.2s;
+      margin: 10px 0;
+}
+.Nosotros_Servicios_card:hover {
+      transform: scale(1.2);
 }
 .servicios_card_title h2 {
-      color: var(--text_primary);
+      color: #c89c4b;
       font-size: 24px;
       font-weight: bold;
       text-align: center;
@@ -192,10 +207,90 @@
       height: 500px;
       background-color: rgb(211, 211, 92);
 }
-#Contactos {
-      height: 500px;
-      background-color: rgb(149, 92, 211);
+.content_categoria {
+      display: flex;
+      flex-direction: column;
 }
+.categoria_title {
+      background-color: var(--color-secondary);
+      text-align: center;
+      color: var(--text_secundary);
+      padding: 20px 0;
+}
+.content_productos {
+      width: 100%;
+      background-color: var(--color);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-row: 1;
+      gap: 5px;
+      padding: 40px 10px;
+}
+.product {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+}
+.product img {
+      background-size: cover;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+}
+#Contactos {
+      min-height: 500px;
+      background-image: url("./Assets/Footer.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+}
+.contactos {
+      min-height: 500px;
+      background-color: #2d384cf2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+}
+.card_footer {
+      border-radius: 20px;
+      border: 2px solid black;
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+}
+.card_footer_title {
+      color: var(--text_primary);
+      text-align: center;
+}
+.card_footer_logo img {
+      width: 100px;
+      height: 100px;
+      color: white;
+}
+.btn_footer {
+      background-color: black;
+      color: var(--text_primary);
+      padding: 16px 40px;
+      border-radius: 20px;
+      text-decoration: none;
+}
+.footer {
+      width: 100%;
+      height: 80px;
+      padding: 0 10px 0 10px;
+      background-color: var(--color-primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.footer img {
+      height: 50px;
+}
+
 @media (max-width: 700px) {
       .navbar {
             background-color: var(--color-primary);
@@ -240,5 +335,8 @@
             color: gray;
             font-weight: bold;
             text-align: center;
+      }
+      .Nosotros_Servicios_card:hover {
+            transform: none;
       }
 }
