@@ -222,20 +222,19 @@
       background-color: var(--color);
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-row: 1;
+      grid-template-rows: 300px;
       gap: 5px;
       padding: 40px 10px;
 }
-.product {
-      position: relative;
-      height: 400px;
-      overflow: hidden;
-}
 .product img {
-      background-size: cover;
       max-width: 100%;
       max-height: 100%;
-      object-fit: contain;
+      object-position: contain;
+}
+.product {
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
 }
 #Contactos {
       min-height: 500px;
