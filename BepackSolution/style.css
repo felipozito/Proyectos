@@ -60,7 +60,7 @@
       color: var(--text_secundary);
 }
 .header {
-      height: 600px;
+      min-height: 600px;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -92,9 +92,11 @@
 .slide_text h2 {
       font-size: 60px;
       color: var(--text_primary);
+      backdrop-filter: blur(50px);
 }
 .slide_text h4 {
       color: var(--text_secundary);
+      backdrop-filter: blur(50px);
 }
 .separator {
       width: 60%;
@@ -186,6 +188,7 @@
       cursor: pointer;
       transition: 0.2s;
       margin: 10px 0;
+      backdrop-filter: blur(10px);
 }
 .Nosotros_Servicios_card:hover {
       transform: scale(1.2);
@@ -244,21 +247,7 @@
 .productos:hover {
       transform: scale(1.05);
 }
-.slide.prev {
-}
-.slide.next {
-}
-.image-box {
-      height: 100%;
-      width: 100%;
-      border-radius: 0 0 3px 3px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-.image-box {
-      width: 80%;
-}
+
 #Contactos {
       min-height: 500px;
       background-image: url("./Assets/Footer.jpeg");
@@ -318,10 +307,12 @@
       height: 50px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 790px) {
       .navbar {
             background-color: var(--color-primary);
-            display: sticky;
+            position: fixed;
+            right: 0;
+            top: 0;
       }
       .ico {
             display: block;
@@ -375,15 +366,26 @@
             gap: 5px;
             padding: 40px 10px;
       }
+      .header {
+            min-height: 500px;
+      }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
       .content_productos {
-            width: 100%;
-            background-color: var(--color);
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(4, 300px);
-            gap: 5px;
-            padding: 40px 10px;
+      }
+      .header {
+            min-height: 250px;
+      }
+      .slide_text {
+            margin: 0;
+      }
+      .slide_text h2 {
+            font-size: 20px;
+      }
+      .slide_text h4 {
+            font-size: 14px;
       }
 }
