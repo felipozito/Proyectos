@@ -188,7 +188,6 @@
       cursor: pointer;
       transition: 0.2s;
       margin: 10px 0;
-      backdrop-filter: blur(10px);
 }
 .Nosotros_Servicios_card:hover {
       transform: scale(1.2);
@@ -243,6 +242,7 @@
       overflow: hidden;
       background-color: #0a1127;
       transition: 0.5s;
+      border-radius: 10px;
 }
 .productos:hover {
       transform: scale(1.05);
