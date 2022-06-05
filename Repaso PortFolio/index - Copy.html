@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sergio Ivan Melgarejo Portfolio">
+  <title>Portfolio</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/757be4cedc.js" crossorigin="anonymous"></script>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body class="dark">
+  <!-- Loader -->
+  <div id="loading" class='loading'>
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <span data-section="loading" data-value="text">Loading</span>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header class="header">
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme" data-language="en">
+        <i id="toggle-icon" class="toggle-theme__icon fas fa-sun"></i>
+        <p id="toggle-text" class="toggle-thme__text">Light Mode</p>
+      </div>
+
+      <!-- Message -->
+      <h1 class="h1" data-section="profile" data-value="h1">Sergio Ivan Melgarejo Portfolio</h1>
+    </div>
+
+    <div id="flags" class="flags">
+      <div class="flags__item" data-language="es">
+        <img src="./assets/icons/es.svg" alt="Spain flag">
+      </div>
+      <div class="flags__item" data-language="en">
+        <img src="./assets/icons/us.svg" alt="the United State flag">
+      </div>
+    </div>
+
+    <div id="toggle-colors" class="colors">
+      <div data-color="hsl(2, 84%, 56%)" class="colors__item colors_item--red"></div>
+      <div data-color="hsl(24, 84%, 56%)" class="colors__item colors_item--orange"></div>
+      <div data-color="hsl(46, 84%, 56%)" class="colors__item colors_item--yellow"></div>
+      <div data-color="hsl(150, 84%, 56%)" class="colors__item colors_item--green"></div>
+      <div data-color="hsl(214, 84%, 56%)" class="colors__item colors_item--blue"></div>
+      <div data-color="hsl(278, 84%, 56%)" class="colors__item colors_item--purple"></div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="main">
+
+    <!-- Box Left -->
+    <section class="column column--left">
+      <!-- Profile Card -->
+      <article class="card card-profile">
+        <div class="card__image-container">
+          <img class="card__img-perfil" src="./assets/images/profile.jpg" alt="Sergio Ivan Melgarejo">
+        </div>
+        <div class="card__header">
+          <h2 class="card__title">Sergio Ivan Melgarejo</h2>
+          <p class="card__subtitle" data-section="profile" data-value="subtitle">Front end Developer</p>
+        </div>
+        <p class="card__text" data-section="profile" data-value="description">
+            Programmer, passionate about technology and programming who is looking to learn and grow in this area.
+        </p>
+        <div class="card__body">
+          <div class="card__link">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:sergio.ivan.melgarejo@gmail.com">
+              sergio.ivan.melgarejo@gmail.com
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-phone icon"></i>
+            <a href="tel:5401153147787">
+              +54-011-5314-7787
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fab fa-linkedin icon"></i>
+            <a href="https://www.linkedin.com/in/sergio-ivan-melgarejo/" target="__blank">
+              Linkedin
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fab fa-twitter-square icon"></i>
+            <a href="https://twitter.com/SergioIMel" target="__blank">
+              Twitter
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fab fa-github icon"></i>
+            <a href="https://github.com/Sergio-Ivan-Melgarejo" target="__blank">
+              GitHub
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-laptop-code icon"></i>
+            <a href="https://www.frontendmentor.io/profile/Sergio-Ivan-Melgarejo" target="__blank">
+              Front Mentor
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fab fa-codepen icon"></i>
+            <a href="https://codepen.io/sergio-ivan-melgarejo" target="__blank">
+              CodePen
+            </a>
+          </div>
+        </div>
+        <!-- CV -->
+        <a class="btn-cv button button--primary"  data-section="profile" data-value="cv" href="./assets/pdf/sergio-ivan-melgarejo-cv.pdf" target="_black" >Download my CV</a>
+        <!-- añadir version en ingles -->
+        <!-- <a class="btn-cv button button--primary" href="./assets/pdf/CV.pdf" target="_black" >CV</a> -->
+      </article>      
+      <!-- Experience -->
+      <article class="card card--experiences">
+        <h2 class="card__title" data-section="experience" data-value="title">Experiences</h2>
+        <div class="experience">
+          <i class="fas fa-code experience__image"></i>
+          <div class="experience__info">
+            <p class="experience__time no-margin" data-section="experience" data-value="0-dates">
+              May 2022 - Current
+            </p>
+            <h3 class="experience__job">Alkemy Academy</h3>
+            <p class="experience__description" data-section="experience" data-value="0-description">I joined Alkemy to increase my professional skills with React and teamwork.</p>
+          </div>
+        </div>
+        <div class="experience">
+          <i class="fas fa-code experience__image"></i>
+          <div class="experience__info">
+            <p class="experience__time no-margin" data-section="experience" data-value="1-dates">
+              Jun 2022 - Current
+            </p>
+            <h3 class="experience__job">Freelancer (FrontEnd)</h3>
+            <p class="experience__description" data-section="experience" data-value="1-description">I joined freelancer to gain experience.</p>
+          </div>
+        </div>
+        <div class="experience">
+          <i class="fas fa-code experience__image"></i>
+          <div class="experience__info">
+            <p class="experience__time no-margin" data-section="experience" data-value="2-dates">
+              February 2018 - 2020
+            </p>
+            <h3 class="experience__job" data-section="experience" data-value="2-title">Warehouse-Kiosk</h3>
+            <p class="experience__description" data-section="experience" data-value="2-description">I attended and in a store-kiosk at part-time.</p>
+          </div>
+        </div>
+      </article>
+      <!-- Hobbies -->
+      <section class="card card--hobbies">
+        <h2 class="card__title" data-section="hobbies" data-value="title">Hobbies</h2>
+        <div class="card__image-container">
+          <img src="./assets/images/front-mentor.jpeg" alt="a man running on the street">
+        </div>
+        <h3 class="hobbie__title">Front Mentor</h3>
+        <p class="card__text" data-section="hobbies" data-value="0-description">
+          Most of my free time I like to do the Front Mentor challenges.
+        </p>
+        <footer class="card__link">
+          <i class="fas fa-laptop-code icon"></i>
+          <a href="https://www.frontendmentor.io/profile/Sergio-Ivan-Melgarejo" target="__blank">
+            Front Mentor
+          </a>
+        </footer>
+      </section>
+      <section class="card card--hobbies">
+        <h2 class="card__title" data-section="hobbies" data-value="title">Hobbies</h2>
+        <div class="card__image-container">
+          <img src="./assets/images/CodePen.png" alt="CodePen">
+        </div>
+        <h3 class="hobbie__title" >CodePen</h3>
+        <p class="card__text" data-section="hobbies" data-value="1-description">CodePen is a place where I mainly practice with CSS and build components, and see the creations of the community of programmers.</p>
+        <footer class="card__link">
+          <i class="fab fa-codepen icon"></i>
+          <a href="https://codepen.io/sergio-ivan-melgarejo" target="__blank">
+            CodePen
+          </a>
+        </footer>
+      </section>
+    </section>
+
+    <!-- Box Right -->
+    <section class="column column--right">
+      <div class="box-1">
+        <!-- Frontend Skills -->
+        <article class="card">
+          <h2 class="card__title" data-section="skills" data-value="1-title">Skills</h2>
+          <div class="skills">
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-html5"></i>
+              <span class='skills__item-title'>html</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--80"></div>
+              </div>
+              <ul class="skills__item-bottom">
+                <li class="skills__li">HTML 5</li>
+                <li class="skills__li" data-section="skills" data-value="text-2">Accessibility</li>
+                <li class="skills__li" data-section="skills" data-value="text-3">Seo on Page</li>
+              </ul>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-css3-alt"></i>
+              <span class='skills__item-title'>css</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--80"></div>
+              </div>
+              <ul class="skills__item-bottom">
+                <li class="skills__li">css 3</li>
+                <li class="skills__li">flexbox</li>
+                <li class="skills__li">grid</li>
+                <li class="skills__li" data-section="skills" data-value="text-4">responsive design</li>
+                <li class="skills__li" data-section="skills" data-value="text-5">transition</li>
+                <li class="skills__li" data-section="skills" data-value="text-6">animation</li>
+              </ul>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-js-square"></i>
+              <span class='skills__item-title'>javascript</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--70"></div>
+              </div>
+              <ul class="skills__item-bottom">
+                <li class="skills__li">+es6</li>
+                <li class="skills__li" data-section="skills" data-value="text-7">Functional Programming</li>
+                <li class="skills__li" data-section="skills" data-value="text-8">Object Oriented Programming</li>
+                <li class="skills__li">dom</li>
+                <li class="skills__li" data-section="skills" data-value="text-9">regular expressions</li>
+                <li class="skills__li">ajax</li>
+                <li class="skills__li" data-section="skills" data-value="text-10">asynchrony</li>
+                <li class="skills__li">json</li>
+                <li class="skills__li" data-section="skills" data-value="text-11">API consumption</li>
+              </ul>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-react"></i>
+              <span class='skills__item-title'>react</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--60"></div>
+              </div>
+              <ul class="skills__item-bottom">
+                <li class="skills__li">hook</li>
+                <li class="skills__li">context</li>
+                <li class="skills__li">Ruter</li>
+                <li class="skills__li">reducer</li>
+                <li class="skills__li">redux</li>
+                <li class="skills__li">ajax</li>
+                <li class="skills__li" data-section="skills" data-value="text-11">API consumption</li>
+              </ul>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-bootstrap"></i>
+              <span class='skills__item-title'>Bootstrap</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--40"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-sass"></i>
+              <span class='skills__item-title'>sass</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--30"></div>
+              </div>
+              <ul class="skills__item-bottom">
+                <li class="skills__li">scss</li>
+              </ul>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-react"></i>
+              <span class='skills__item-title'>React Native</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="text-12">Coming soon</small>
+                </div>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-node-js"></i>
+              <span class='skills__item-title'>Node</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="text-12">Coming soon</small>
+                </div>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-unity"></i>
+              <span class='skills__item-title'>C# - unity</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="text-12">Coming soon</small>
+                </div>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+        <!-- Person Skills -->
+        <article class="card">
+          <h2 class="card__title" data-section="skills" data-value="2-title">Person Skills</h2>
+          <div class="skills">
+
+            <div class="skills__item">
+              <i class="skills__item-icon fas fa-flag"></i>
+              <span class='skills__item-title' data-section="skills" data-value="english">English</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--50"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fas fa-flag"></i>
+              <span class='skills__item-title' data-section="skills" data-value="spanish">Spanish</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="text-1">Native</small>
+                </div>
+                <div class="skills__bar skills__bar--100"></div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+        <!-- tool Skills -->
+        <article class="card">
+          <h2 class="card__title" data-section="skills" data-value="3-title">Tool</h2>
+
+          <div class="skills">
+              
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-git-alt"></i>
+              <span class='skills__item-title'>Git</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+              
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-github-square"></i>
+              <span class='skills__item-title'>GitHub</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--50"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-github-square"></i>
+              <span class='skills__item-title'>GitHub Desktop</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--40"></div>
+              </div>
+            </div>
+            
+            <div class="skills__item">
+              <i class="skills__item-icon fas fa-window-maximize"></i>
+              <span class='skills__item-title'>Visual Studio Code</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--70"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-npm"></i>
+              <span class='skills__item-title'>npm</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="dates">Years of experience</small>
+                  <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                  </div>
+                </div>
+                <div class="skills__bar skills__bar--40"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <i class="skills__item-icon fas fa-window-maximize"></i>
+              <span class='skills__item-title'>Visual Studio</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="text-12">Coming soon</small>
+                </div>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+            
+            <div class="skills__item">
+              <i class="skills__item-icon fab fa-unity"></i>
+              <span class='skills__item-title'>unity</span>
+              <div class="skills__item-top">
+                <div class="skill__years-container">
+                  <small class="card__subtitle" data-section="skills" data-value="text-12">Coming soon</small>
+                </div>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <!-- Project -->
+      <div class="box-2" id="card--project">
+      <div id="container--projects" class="container--projects"></div>
+      </div>
+      <div class="container--buttons buttons button-down" id="more-10">
+        <button class="button button--primary" data-section="project" data-value="more-10">Top up 10 more</button>
+      </div>
+    </section>
+
+    <!-- button for go up -->
+    <div id="button-go-up" class="button-go-up">
+      <i class="far fa-arrow-alt-circle-up"></i>
+    </div> 
+
+    <!-- button resect -->
+    <div id="button-resect" class="button-resect" title="Resect Filter">
+      <i class="fas fa-redo"></i>
+    </div> 
+  </main>
+
+  <!-- Project -->
+  <footer class="footer card"><span class="experience__job">&copy;</span> sergio ivan melgarejo 2022 </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

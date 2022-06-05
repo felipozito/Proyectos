@@ -1,0 +1,58 @@
+{
+    "profile": {
+        "title": "Sergio Ivan Melgarejo",
+        "subtitle": "Desarrollador Frontend",
+        "description": "Soy desarrollador frontend. Actualmente, estoy concentrado en el desarrollo web, a futuro planeo avanzar en lado del móvil y backend.",
+        "cv":"Descargar mi CV",
+        "h1":"Portafolio de Sergio Ivan Melgarejo"
+    },
+    "experience": {
+        "title":"Experiencias",
+        "0-dates": "Mayo 2022 - Actualmente",
+        "0-description": "Me uní a Alkemy para aumentar mis habilidades profesionales con React y el trabajo en equipo.",
+        "1-dates": "Enero 2022 - Actualmente",
+        "1-description": "Me uní a freelancer para ganar experiencia.",
+        "2-title": "Almacén-Kiosco",
+        "2-dates": "Febrero de 2018 - 2020",
+        "2-description": "Atendí y en un almacén-kiosco a medio tiempo."
+    },
+    "hobbies": {
+        "title":"Pasatiempos",
+        "0-description": "La mayor parte de mi tiempo libre me gusta hacer los desafíos de Front Mentor.",
+        "1-description": "CodePen es un lugar donde principalmente práctico con CSS y construyo componentes, y veo las creaciones de la comunidad de programadores."
+    },
+    "skills": {
+        "1-title": "Habilidades",
+        "2-title": "Habilidades Personales",
+        "spanish": "Español",
+        "english": "Inglés",
+        "3-title": "Herramientas",
+        "dates": "Años de experiencias",
+        "text-1":"Nativo",
+        "text-2":"accesibilidad",
+        "text-3":"seo en página",
+        "text-4":"diseño adaptativo",
+        "text-5":"transitions",
+        "text-6":"animations",
+        "text-7":"Programación funcional",
+        "text-8":"Programación orientada a objetos",
+        "text-9":"expresiones regulares",
+        "text-10":"asincronía",
+        "text-11":"consumo de API",
+        "text-12":"próximamente"
+    },
+    "project": {
+        "button":"Código",
+        "more-10":"Recarga 10 más",
+        "alt": "captura de pantalla"
+    },
+    "card Error":{
+        "menssage": "El servidor no responde, por favor inténtelo de nuevo más tarde."
+    },
+    "card no Pages":{
+        "menssage": "No hay Páginas."
+    },
+    "loading":{
+        "text": "Cargando"
+    }
+}

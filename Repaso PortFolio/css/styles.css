@@ -1,0 +1,27 @@
+@import url("./general.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
+@import url("./loader.css");
+
+
+/* * Card Error -------------------------- */
+
+.cardError{
+    color: var(--primary-color);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: var(--bg-card-color);
+    border-radius: var(--border-radius);
+    height: min-content;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    animation: apppearButtonGoUp .5s linear forwards;
+}
+
+.one-col{
+    grid-template-columns: 1fr;
+}

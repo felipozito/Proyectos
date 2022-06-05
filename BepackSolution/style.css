@@ -53,7 +53,7 @@
       font-weight: bold;
 }
 .item:hover {
-      background-color: rgb(162, 194, 162);
+      background-color: #a59d11;
       transition: ease-in-out 0.5s;
 }
 .item a:hover {

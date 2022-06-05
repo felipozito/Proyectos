@@ -1,0 +1,96 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+}
+
+.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 70px;
+      background: transparent;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all ease-in 0.3s;
+      z-index: 1;
+}
+.navbar-logo {
+      padding-left: 20px;
+}
+.navbar-topic {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+.item {
+      position: relative;
+}
+.item a {
+      padding: 30px 20px;
+      font-weight: bold;
+}
+.item > a::after {
+      content: "";
+      background: red;
+      width: 0%;
+      left: 0;
+      top: 20px;
+      height: 4px;
+      position: absolute;
+      transition: ease 0.4s;
+}
+.item a:hover::after {
+      width: 100%;
+}
+.subtopic {
+      position: absolute;
+      top: 45px;
+      width: 100%;
+      background: rgb(221, 212, 212);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      display: none;
+      transition: all ease-in 3s;
+}
+.subitem {
+      padding: 15px 0px;
+      width: 100%;
+}
+.subitem a {
+      padding: 15px 30px;
+}
+.show {
+      display: block;
+}
+.sticky {
+      position: sticky;
+      background: rgb(221, 212, 212);
+}
+
+#inicio {
+      background: red;
+      height: 100vh;
+}
+#nosotros {
+      background: blue;
+      height: 100vh;
+}
+#about {
+      background: green;
+      height: 100vh;
+}
+#servicios {
+      background: gray;
+      height: 100vh;
+}
+#contactos {
+      background: yellow;
+      height: 100vh;
+}
