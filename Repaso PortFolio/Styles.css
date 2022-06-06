@@ -225,14 +225,3 @@
 .skills__bar--100::after {
       width: 100%;
 }
-
-@media screen and (max-width: 781px) {
-      .box-1 {
-            flex-direction: column;
-            flex-wrap: nowrap;
-      }
-      .box-1 .card {
-            flex-grow: 1;
-            max-width: var(--max-width-card);
-      }
-}
