@@ -1,0 +1,99 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: 0;
+      font-family: "Montserrat", sans-serif;
+      list-style: none;
+}
+
+:root {
+      --Linea_Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+      --Very_Light_Grayish_Blue: hsl(240, 78%, 98%);
+      --Light_Grayish_Blue: hsl(234, 14%, 74%);
+      --Grayish_Blue: hsl(233, 13%, 49%);
+      --Dark_Grayish_Blue: hsl(232, 13%, 33%);
+}
+body {
+      background-color: var(--Very_Light_Grayish_Blues);
+}
+h2 {
+      text-align: center;
+      color: var(--Grayish_Blue);
+      padding-top: 40px;
+      font-weight: bold;
+}
+.content_change {
+      text-align: center;
+      margin-top: 20px;
+      color: var(--Light_Grayish_Blue);
+}
+.content_card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+}
+.card {
+      box-shadow: 2px 2px 10px hsl(233, 13%, 49%);
+      margin: 0 10px;
+      width: 280px;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+}
+.card h4 {
+      font-size: 14px;
+      color: var(--Grayish_Blue);
+      text-align: center;
+      margin-top: 20px;
+}
+.card h2 {
+      padding-top: 20px;
+      font-size: 50px;
+      font-weight: bold;
+      color: var(--Dark_Grayish_Blue);
+      margin-bottom: 20px;
+}
+.card ul {
+      text-align: center;
+      margin-bottom: 20px;
+      width: 80%;
+}
+.card li {
+      padding: 15px 0;
+      color: var(--Grayish_Blue);
+}
+.card_btn {
+      border-radius: 5px;
+      border: 2px solid hsl(237, 63%, 64%);
+      width: 80%;
+      height: 40px;
+}
+.card_btn p {
+      font-size: 12px;
+      text-align: center;
+      padding-top: 10px;
+      color: hsl(237, 63%, 64%);
+}
+.card:nth-child(2) {
+      transform: scale(1.15);
+      background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+      color: white;
+}
+.card:nth-child(2) p {
+      color: white;
+}
+.card:nth-child(2) .card_btn {
+      border: 2px solid white;
+}
+.card:nth-child(2) h2 {
+      color: white;
+}
+.card:nth-child(2) h4 {
+      color: white;
+}
+.card:nth-child(2) li {
+      color: white;
+}
