@@ -13,9 +13,6 @@ navResponsive.addEventListener("click", (e) => {
                   navResponsive.textContent = "=";
             }
       });
-      //   if (navbarItem.classList == "show") {
-      //         navResponsive.setContent = "X";
-      //   }
 });
 
 window.onscroll = () => {
