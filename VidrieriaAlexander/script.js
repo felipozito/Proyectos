@@ -20,4 +20,11 @@ navResponsive.addEventListener("click", (e) => {
 
 window.onscroll = () => {
       navbarItem.classList.remove("show");
+      navbarItem.classList.forEach((item) => {
+            if (item == "show") {
+                  navResponsive.textContent = "x";
+            } else {
+                  navResponsive.textContent = "=";
+            }
+      });
 };
