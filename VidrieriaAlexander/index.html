@@ -5,120 +5,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="navbar_logo">
             <a href=""><img src="./Assets/Logo.png" alt=""></a>
         </div>
-        <div class="navbar_items">
-            <a href="#Inicio">Inicio</a>
-            <a href="#Nosotros">Nosotros</a>
-            <a href="#Servicios">Servicios</a>
-            <a href="#Productos">Productos</a>
-            <a href="#Contactos">Contactos</a>
+        <div class="navbar_item">
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="#Contactos">Contactos</a></li>
+            </ul>
         </div>
     </nav>
-    <header>
+    <header id="Inicio">
         <div id="Inicio" class="header_fondo">
-            <h1>Vidrieria Alexander</h1>
-            <h2>Especialistas en Vidrios y Aluminios</h2>
-            <p>Invierte en tu futuro con confort y excelencia</p>
+            <h1>Aluminio y Vidrio</h1>
+            <h1> Alexander</h1>
+            <p>Brindar a nuestros clientes y comunidad productos<br>innovadores a mejor precio y excelente calidad</p>
             <a href="#" class="header_btn">Contactanos</a>
         </div>
     </header>
     <main>
-        <section class="section_Nosotros sombra" id="Nosotros">
-            <h2>Nosotros</h2>
-            <article class="article_Nosotros">
-                <div class="article_img"></div>
-                <div class="article_info">
-                    <h3>Vidrieria Alexander</h3>
-                    <p>
-                        Somos empresa orgullosamente ................ con una gran trayectoria por mas de xx años de
-                        experiencia y permanencia en el mercado local y
-                        nacional con profesionales atendiendo cada una de sus áreas.
-                    </p>
-                    <p>
-                        Convirtiéndonos en trabajadores de Excelencia, lo que nos brinda la posibilidad de atender con
-                        una calidad inigualable y a los mejores
-                        precios.
-                    </p>
-                    <div class="article_info_iconos">
-                        <div class="content_icon">
-                            <img src="./Assets/experience.png" alt="" />
-                            <p>Experiencia</p>
-                        </div>
-                        <div class="content_icon">
-                            <img src="./Assets/warranty.png" alt="" />
-                            <p>Garantia</p>
-                        </div>
-                        <div class="content_icon">
-                            <img src="./Assets/quality-control.png" alt="" />
-                            <p>Calidad</p>
-                        </div>
+        <section class="nosotros" id="Nosotros">
+            <h2>NOSOTROS</h2>
+            <div class="content_card">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="./Assets/Header.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h2> QUIENES SOMOS</h2>
+                        <p>Somos especializastes en vidrio, espejo y aluminio para la decoración: cortinas de baño y
+                            pasamanos con vidrio templado,
+                            ventanas, puertas, divisiones de oficinas, mamparas, Espejos decorativos, placas de
+                            reconocimiento, consolas, vitrinas,
+                            acuarios, mesas, gabinetes y mucho más.</p>
                     </div>
                 </div>
-            </article>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="./Assets/Header.jpg" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h2> TRAYECTORIA </h2>
+                        <p>Nuestra trayectoria se extiende a más de XX años en el mercado, basado en el sector, nuestra
+                            calidad. Para ello contamos
+                            con un recurso humano calificado y comprometido con nuestro objetivo.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <section class="section_Servicios sombra" id="Servicios">
-            <h2>Servicios</h2>
-            <article class="article_servicios">
-                <div class="content_serivicios">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt provident ullam eum,
-                        accusamus voluptate inventore consectetur rem qui
-                        recusandae veritatis consequatur nulla reiciendis maiores velit.
-                    </p>
+        <section class="productos" id="Productos">
+            <h2>PRODUCTOS</h2>
+            <div class="content_gallery">
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Fabricacion y elaboracion ventanas</p>
+                    </div>
                 </div>
-                <div class="content_serivicios">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt provident ullam eum,
-                        accusamus voluptate inventore consectetur rem qui
-                        recusandae veritatis consequatur nulla reiciendis maiores velit.
-                    </p>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Cortinas de bano en vidrio templado</p>
+                    </div>
                 </div>
-                <div class="content_serivicios">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt provident ullam eum,
-                        accusamus voluptate inventore consectetur rem qui
-                        recusandae veritatis consequatur nulla reiciendis maiores velit.
-                    </p>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Grabados esmerilizados y biscelados</p>
+                    </div>
                 </div>
-            </article>
-        </section>
-        <section>
-            <h2>Productos</h2>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Ventanas de vidrio al por mayor y por menor</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Puertas y manparas</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Cuadros y marcos</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Vitrinas, muebles y adornos de vidrio</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_shadow">
+                        <p>Diseno para obra y construccion</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <section class="personal" id="Personal"></section>
+    <footer class="footer" id="Contactos">
         <h2>Contactanos</h2>
         <div class="footer_content">
             <div class="footer_redes">
                 <h3>Redes sociales :</h3>
-                <p><img src="./Assets/wp.ico" alt="wp" /> 0983443143</p>
-                <p><img src="./Assets/fb.ico" alt="fb" /> Vidrieria Alexander</p>
-                <p><img src="./Assets/cel.ico" alt="telf" /> 0983443143</p>
+                <a href=""><img src="./Assets/wp.ico" alt="wp" /> 0983443143</a>
+                <a href=""><img src="./Assets/fb.ico" alt="fb" /> Vidrieria Alexander</a>
+                <a href=""><img src="./Assets/cel.ico" alt="telf" /> 0983443143</a>
             </div>
             <div class="formulario">
                 <form action="submit">
                     <div class="fila">
+                        <label for="">Nombre:</label>
                         <input type="text" placeholder="Ingrese Su Nombre" />
                     </div>
                     <div class="fila">
+                        <label for="">Numero:</label>
                         <input type="telf" placeholder="Ingrese Numero" />
                     </div>
                     <div class="fila">
+                        <label for="">Correo:</label>
                         <input type="email" placeholder="Ingrese Correo" />
                     </div>
                     <div class="fila">
-                        <textarea name="" id="" cols="40" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
+                        <textarea name="" id="" cols="22" rows="10" placeholder="Ingrese Su Mensaje"></textarea>
                     </div>
                     <input type="submit" />
                 </form>
@@ -133,6 +151,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
