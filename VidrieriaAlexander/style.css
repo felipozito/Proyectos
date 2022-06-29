@@ -120,7 +120,7 @@ header {
       border-radius: 20px;
       font-weight: bold;
       padding: 10px 10px;
-      transition: all 0.4s ease;
+      transition: all 0.5s ease;
 }
 .header_fondo a:hover {
       transform: translateY(20px) scale(1.05);
@@ -149,7 +149,13 @@ header {
       border-radius: 20px;
       box-shadow: 1px 1px 10px black;
       padding: 20px 0;
-      transition: all 0.4s ease;
+      transform: translateX(-200%);
+      opacity: 0.2;
+      transition: transform 0.8s ease, opacity 1s ease;
+}
+.apperd_card {
+      transform: translateX(0px);
+      opacity: 1;
 }
 .card_img img {
       object-fit: cover;
@@ -204,7 +210,13 @@ header {
       box-shadow: 1px 1px 5px black;
       overflow: hidden;
       cursor: pointer;
-      transition: 0.4s all ease;
+      transform: scale(0);
+      opacity: 0.1;
+      transition: 0.8s transform, 2s opacity ease;
+}
+.product_apperd {
+      transform: scale(1);
+      opacity: 1;
 }
 .product_shadow {
       height: 100%;
