@@ -1,0 +1,84 @@
+#root {
+      background: var(--second_gradient);
+}
+.app {
+      background: var(--second_gradient);
+}
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      background: var(--main_gradient);
+      align-items: center;
+      height: 80px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+}
+.nav_logo {
+      padding-left: 20px;
+}
+.nav_text {
+      width: 40%;
+}
+.nav_list {
+      display: flex;
+      justify-content: space-around;
+}
+.nav_list {
+      width: 100%;
+}
+.nav_list li {
+      font-weight: bold;
+      color: var(--text_primary);
+      cursor: pointer;
+      position: relative;
+      transition: all 0.4s ease-in-out;
+}
+.nav_list li::after {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      content: " ";
+      width: 0px;
+      height: 4px;
+      background: var(--second_gradient);
+      transition: all 0.4s ease-in-out;
+}
+.nav_list li:hover {
+      transform: scale(1.1);
+}
+.nav_list li:hover::after {
+      width: 100%;
+}
+.nav_list li a {
+      color: var(--text_primary);
+}
+
+.header {
+      height: 100vh;
+}
+.carousel {
+      height: 400px;
+}
+.carousel_bg {
+      background-color: rgba(0, 0, 0, 0.388);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+}
+.slider {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+}
+.about {
+      min-height: 100vh;
+}
+.clients {
+      display: flex;
+}

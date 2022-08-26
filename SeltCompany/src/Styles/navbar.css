@@ -1,0 +1,98 @@
+.app {
+      background: var(--second_gradient);
+}
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      background: var(--main_gradient);
+      align-items: center;
+      height: 80px;
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      z-index: 10;
+}
+.nav_logo {
+      padding-left: 20px;
+}
+.nav_text {
+      width: 40%;
+}
+.nav_list {
+      display: flex;
+      justify-content: space-around;
+}
+.nav_list {
+      width: 100%;
+}
+.nav_list li {
+      font-weight: bold;
+      color: var(--text_primary);
+      cursor: pointer;
+      position: relative;
+      transition: all 0.4s ease-in-out;
+}
+.nav_list li::after {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      content: " ";
+      width: 0px;
+      height: 4px;
+      background: var(--second_gradient);
+      transition: all 0.4s ease-in-out;
+}
+.nav_list li:hover {
+      transform: scale(1.1);
+}
+.nav_list li:hover::after {
+      width: 100%;
+}
+.nav_list li a {
+      color: var(--text_primary);
+}
+.icon {
+      font-size: 25px;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+}
+.bx {
+      color: red;
+}
+
+@media only screen and (max-width: 750px) {
+      .icon {
+            display: block;
+      }
+      .nav_text {
+            position: absolute;
+            right: 0;
+            top: 80px;
+            width: 100%;
+            height: 50vh;
+            background: var(--main);
+            border-radius: 0px 0px 20px 20px;
+            transition: all 0.4s ease-in-out;
+            clip-path: circle(0% at 100% 0);
+      }
+      .nav_list {
+            width: 70vw;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+      }
+      .nav_list li {
+            padding: 20px 0;
+            width: 100%;
+      }
+      .nav_list li a {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+      }
+      .active {
+            clip-path: circle(141.2% at 100% 0);
+      }
+}

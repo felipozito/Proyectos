@@ -1,0 +1,140 @@
+.about {
+      background: var(--secondary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+}
+.about_info {
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      color: var(--text_secondary);
+}
+.about_info h2 {
+      color: var(--main);
+}
+.tab {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      background: rgba(0, 0, 0, 0.388);
+      padding: 20px 10px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      color: var(--main);
+}
+.tabs {
+      background: rgba(0, 0, 0, 0.388);
+      padding: 20px 10px;
+      color: var(--main);
+}
+.active-tabs {
+      box-shadow: 1px 1px 5px var(--main);
+      background: var(--main_gradient);
+      font-weight: bold;
+      color: var(--secondary);
+}
+
+.active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: var(--main);
+}
+.content_tabs {
+      width: 100%;
+      height: 100%;
+      padding: auto;
+}
+.tab_buttons {
+      width: 100%;
+      display: flex;
+}
+.tab_buttons button {
+      border-radius: 5px;
+      width: 33%;
+      padding: 10px 0;
+      cursor: pointer;
+      font-weight: bold;
+}
+.tab_images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+}
+.tab_images img {
+      align-self: flex-start;
+      width: 100%;
+      object-fit: contain;
+}
+.tab_main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+}
+.content {
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;
+}
+.active-content {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.section_img {
+      height: 200px;
+      width: 100%;
+}
+.content_client {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.content_client h2 {
+      color: var(--main);
+}
+.clients {
+      height: 400px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+}
+.clients_card {
+      width: 400px;
+      min-height: 200px;
+      background: var(--second_gradient);
+      padding: 20px;
+      border-radius: 20px;
+      transition: 0.4s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 10px;
+}
+.clients_card:hover {
+      box-shadow: 1px 1px 5px var(--main), -1px -1px 5px white;
+}
+
+.cards_text h2 {
+      color: var(--text_secondary);
+}
