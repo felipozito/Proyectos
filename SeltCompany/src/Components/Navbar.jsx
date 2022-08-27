@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../Styles/navbar.css";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
       const [active, setActive] = useState(false);
@@ -20,7 +21,9 @@ const Navbar = () => {
       };
       return (
             <div className="navbar">
-                  <div className="nav_logo">Seguridad y Compromiso</div>
+                  <a className="nav_logo" href="#">
+                        <img src={logo} alt="logo" className="logo" />
+                  </a>
                   <div className="nav_text" ref={nav}>
                         <ul className="nav_list">
                               <li>

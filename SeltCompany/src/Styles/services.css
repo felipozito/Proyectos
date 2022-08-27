@@ -29,6 +29,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       transition: all 0.4s ease-in-out;
+      padding: 0 2rem;
 }
 .card_services:hover {
       transform: scale(1.05);

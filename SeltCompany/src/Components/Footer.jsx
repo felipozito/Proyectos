@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/form.css";
+import logo from "../assets/logoMain.png";
 const Footer = () => {
       return (
             <div className="footer" id="Contacts">
@@ -7,15 +8,22 @@ const Footer = () => {
                   <div className="container-form">
                         <form className="formulario">
                               <h2 className="form_title">Escribenos</h2>
+                              <img src={logo} alt="logo" className="logo" />
                               <div className="iconos">
                                     <div className="border-icon">
-                                          <i className="bx bxl-instagram"></i>
+                                          <a href="https://www.instagram.com/seltcompany.sa/">
+                                                <i className="bx bxl-instagram"></i>
+                                          </a>
                                     </div>
                                     <div className="border-icon">
-                                          <i className="bx bxl-linkedin"></i>
+                                          <a href="https://api.whatsapp.com/send?phone=593983443143&text=Hola Selt Company SA, quisiera mas informacion sobre ...">
+                                                <i className="bx bxl-whatsapp"></i>
+                                          </a>
                                     </div>
                                     <div className="border-icon">
-                                          <i className="bx bxl-facebook-circle"></i>
+                                          <a href="https://www.facebook.com/profile.php?id=100083948901736">
+                                                <i className="bx bxl-facebook-circle"></i>
+                                          </a>
                                     </div>
                               </div>
                               <input type="text" placeholder="Nombre" />
@@ -31,7 +39,6 @@ const Footer = () => {
                                     width="600"
                                     height="550"
                                     frameBorder="0"
-                                    style={{ border: 0 }}
                                     allowFullScreen=""
                                     aria-hidden="false"
                                     tabIndex="0"

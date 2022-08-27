@@ -8,7 +8,7 @@ const Slider = ({ img }) => {
             <div style={{ backgroundImage: `url(${img} )` }} className="slider">
                   <div className="carousel_bg">
                         <h1>SELT COMPANY S.A</h1>
-                        <h2>SERVICIOS INTEGRALES ELECTRICOS</h2>
+                        <h3>SERVICIOS INTEGRALES ELECTRICOS</h3>
                         <h3>INNOVACION PARA EL FUTURO</h3>
                   </div>
             </div>
