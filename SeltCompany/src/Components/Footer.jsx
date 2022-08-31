@@ -16,7 +16,7 @@ const Footer = () => {
                                           </a>
                                     </div>
                                     <div className="border-icon">
-                                          <a href="https://api.whatsapp.com/send?phone=593983443143&text=Hola Selt Company SA, quisiera mas informacion sobre ...">
+                                          <a href="https://api.whatsapp.com/send?phone=593998701154&text=Hola Selt Company SA, quisiera mas informacion sobre ...">
                                                 <i className="bx bxl-whatsapp"></i>
                                           </a>
                                     </div>

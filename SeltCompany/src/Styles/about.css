@@ -25,6 +25,7 @@
       align-items: center;
       border-radius: 20px;
       color: var(--main);
+      margin-bottom: 20px;
 }
 .tabs {
       background: rgba(0, 0, 0, 0.388);
@@ -51,8 +52,8 @@
 }
 .content_tabs {
       width: 100%;
-      min-height: 100%;
       padding: auto;
+      margin-bottom: 20px;
 }
 .tab_buttons {
       width: 100%;

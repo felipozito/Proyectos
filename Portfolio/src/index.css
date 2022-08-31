@@ -1,0 +1,31 @@
+* {
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto Condensed", sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      scroll-behavior: smooth;
+      scroll-padding-top: 3.5rem;
+}
+:root {
+      --bg-color: #101010;
+      --second-bg-color: #191919;
+      --text-color: #fff;
+      --second-color: #c6c9d8bf;
+      --main-color: #f9004d;
+      --big-font: 5.3rem;
+      --h2-font: 4.2rem;
+      --p-font: 1.1rem;
+}
+.darkMode {
+      --bg-color: #ffff;
+      --second-bg-color: rgb(238, 229, 229);
+      --text-color: rgb(0, 0, 0);
+      --second-color: #292b37bf;
+}
+body {
+      background: var(--bg-color);
+      color: var(--text-color);
+}
