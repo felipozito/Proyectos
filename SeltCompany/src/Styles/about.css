@@ -4,6 +4,7 @@
       flex-direction: column;
       align-items: center;
       padding: 20px 0;
+      margin-bottom: 20px;
 }
 .about_info {
       min-height: 200px;
@@ -17,7 +18,8 @@
 }
 .tab {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      width: 100%;
       gap: 1rem;
       background: rgba(0, 0, 0, 0.388);
       padding: 20px 10px;
@@ -25,7 +27,27 @@
       align-items: center;
       border-radius: 20px;
       color: var(--main);
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+}
+.tab_images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      /* height: 400px; */
+}
+.tab_images img {
+      align-self: flex-start;
+      width: 100%;
+      object-fit: contain;
+}
+.content_tabs {
+      width: 100%;
+      padding: auto;
+      padding-bottom: 20px;
+      align-self: flex-start;
+      /* margin-bottom: 20px; */
 }
 .tabs {
       background: rgba(0, 0, 0, 0.388);
@@ -39,6 +61,10 @@
       color: var(--secondary);
 }
 
+.tab_buttons {
+      width: 100%;
+      display: flex;
+}
 .active-tabs::before {
       content: "";
       display: block;
@@ -50,15 +76,7 @@
       height: 5px;
       background: var(--main);
 }
-.content_tabs {
-      width: 100%;
-      padding: auto;
-      margin-bottom: 20px;
-}
-.tab_buttons {
-      width: 100%;
-      display: flex;
-}
+
 .tab_buttons button {
       border-radius: 5px;
       width: 33%;
@@ -66,28 +84,15 @@
       cursor: pointer;
       font-weight: bold;
 }
-.tab_images {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-}
-.tab_images img {
-      align-self: flex-start;
-      width: 100%;
-      object-fit: contain;
-}
+
 .tab_main {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
 }
 .content {
       padding: 20px;
       width: 100%;
-      height: 100%;
       display: none;
 }
 .active-content {
@@ -103,6 +108,7 @@
 .content_client {
       margin-top: 40px;
       width: 100%;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -111,7 +117,7 @@
       color: var(--main);
 }
 .clients {
-      height: 400px;
+      min-height: 400px;
       width: 90%;
       display: flex;
       align-items: center;
@@ -121,7 +127,7 @@
 }
 .clients_card {
       width: 400px;
-      min-height: 200px;
+      min-height: 300px;
       background: var(--second_gradient);
       padding: 20px;
       border-radius: 20px;
@@ -129,13 +135,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-evenly;
       margin: 10px;
 }
 .clients_card:hover {
       box-shadow: 1px 1px 5px var(--main), -1px -1px 5px white;
 }
-
+.cards_text {
+      margin-top: 20px;
+}
 .cards_text h2 {
       color: var(--text_secondary);
+}
+.clients_card img {
+      border-radius: 20px;
+      object-fit: contain;
+      width: 90%;
 }

@@ -65,7 +65,7 @@
       color: var(--secondary);
 }
 
-.formulario input,
+.formulario .input,
 textarea {
       width: 70%;
       display: block;
@@ -82,28 +82,17 @@ textarea {
 }
 .formulario textarea {
       height: 80px;
+      font-weight: bold;
 }
 
-.formulario input[type="button"] {
-      width: 60%;
-      margin: auto;
-      border: solid thin white;
-      padding: 0.7rem;
-      border-radius: 2rem;
-      background-color: white;
-      font-weight: 600;
-      margin-top: 3rem;
-      font-size: 0.8rem;
-      cursor: pointer;
-      color: #222;
-}
 .submit {
       border: var(--main) thin solid;
       background: none;
       width: 80%;
       padding: 20px 0;
-      color: wheat;
+      color: var(--main);
       border-radius: 20px;
+      border-color: wheat;
       transition: all 0.4s ease;
       font-weight: bold;
       font-size: 20px;

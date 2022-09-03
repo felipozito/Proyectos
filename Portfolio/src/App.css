@@ -609,6 +609,7 @@ form textarea {
       font-weight: 600;
       border-radius: 30px;
       width: 200px;
+      padding: 12px 0;
       transition: ease.35s;
 }
 .contact-form form .send:hover {

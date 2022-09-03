@@ -1,12 +1,26 @@
 import React from "react";
 import "../Styles/form.css";
+import emailjs from "@emailjs/browser";
 import logo from "../assets/logoMain.png";
 const Footer = () => {
+      const sendMail = (e) => {
+            e.preventDefault();
+            console.log("Enter");
+            emailjs.sendForm("service_pqrr0j1", "template_mszdy8h", e.target, "hHJaEd8Deft3xRH7K").then(
+                  () => {
+                        console.log("Sent!");
+                  },
+                  (err) => {
+                        console.log(JSON.stringify(err));
+                  }
+            );
+            e.target.reset();
+      };
       return (
             <div className="footer" id="Contacts">
                   <h2>CONTACTANOS</h2>
                   <div className="container-form">
-                        <form className="formulario">
+                        <form className="formulario" onSubmit={sendMail}>
                               <h2 className="form_title">Escribenos</h2>
                               <img src={logo} alt="logo" className="logo" />
                               <div className="iconos">
@@ -26,12 +40,12 @@ const Footer = () => {
                                           </a>
                                     </div>
                               </div>
-                              <input type="text" placeholder="Nombre" />
-                              <input type="email" placeholder="Email" />
-                              <textarea type="text" placeholder="Mensaje" />
-                              <button type="button" value="Enviar" className="submit">
-                                    Enviar
-                              </button>
+
+                              <input type="text" placeholder="Nombre" id="name" name="user_name" className="input" />
+                              <input type="email" placeholder="Email" id="user_email" name="user_email" className="input" />
+                              <input type="phone" placeholder="Telefono" id="user_phone" name="user_phone" className="input" />
+                              <textarea type="text" placeholder="Mensaje" name="user_messages" />
+                              <input type="submit" className="submit" />
                         </form>
                         <div className="map">
                               <iframe

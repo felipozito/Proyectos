@@ -1,8 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ClientsCard from "./ClientsCard";
 import "../Styles/about.css";
 import img from "../assets/header1.jpg";
 import img2 from "../assets/Plano.jpg";
+import client1 from "../assets/puntoElectrico.jpeg";
+import client2 from "../assets/Seytel.jpeg";
 
 const About = () => {
       const clients = [
@@ -10,20 +12,28 @@ const About = () => {
                   title: "Punto Electrico",
                   description:
                         "Nos asociamos con el punto electrico para trabajar en la fabricacion de tableros y lamparas iluminacion. La calidad del  producto y la unión de fuerzas fue inspiradora y esperamos utilizar sus servicios nuevamente en el futuro.",
-                  img: "",
+                  img: client1,
             },
             {
                   title: "SEYTEL",
                   description:
                         "Trabajamos con SEYTEL en un proyecto basado en mantenimiento de UPS y fibra optica, de varias fases. Todo el proceso fluyó naturalmente y ambas partes cumplieron todos nuestros objetivos.",
+                  img: client2,
             },
       ];
 
       const [toggleState, setToggleState] = useState(1);
+      const [aboutScroll, setAboutScroll] = useState();
+      const about = useRef();
+
+      useEffect(() => {
+            console.log(about.current.getBoundingClientRect().y);
+      }, [aboutScroll]);
 
       const toggleTab = (index) => {
             setToggleState(index);
       };
+
       return (
             <div className="about" id="About">
                   <div className="about_info">
@@ -32,7 +42,7 @@ const About = () => {
                               Es un equipo, comprometido, responsable y capacitado para ejecutar todo tipo de proyectos eléctricos y electrónicos.
                         </span>
                   </div>
-                  <div className="tab">
+                  <div className="tab" ref={about}>
                         <div className="tab_images">
                               <img src={img} alt="" />
                         </div>
@@ -48,7 +58,6 @@ const About = () => {
                                           VISION
                                     </button>
                               </div>
-
                               <div className="tab_main">
                                     <div className={toggleState === 1 ? "content  active-content" : "content"}>
                                           <p>

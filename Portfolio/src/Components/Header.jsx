@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 
 const Header = () => {
       const [darkModeState, setDarkModeState] = useState(true);
+      const [sticky, setSticky] = useState(false);
       const [navBar, setNavBar] = useState(true);
       const rootStyle = document.documentElement.style;
       const navbar = useRef();
@@ -26,7 +27,11 @@ const Header = () => {
             setNavBar(true);
       };
       window.addEventListener("scroll", () => {
-            headerColor.current.classList.toggle("sticky", window.scrollY > 0);
+            if (window.scrollY > 0) {
+                  setSticky(true);
+            } else {
+                  setSticky(false);
+            }
       });
       const changeColor = (e) => {
             rootStyle.setProperty("--main-color", e.target.dataset.color);
@@ -34,7 +39,7 @@ const Header = () => {
       };
 
       return (
-            <header ref={headerColor}>
+            <header ref={headerColor} className={sticky ? `sticky` : ""}>
                   <a href="#" className="logo">
                         FA
                   </a>
