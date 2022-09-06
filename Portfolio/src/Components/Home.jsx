@@ -7,9 +7,9 @@ const Home = () => {
       return (
             <section className="home" id="home">
                   <div className="home-text">
-                        <h4>Hello, my names is</h4>
+                        <h4>Hola, mi nombre es</h4>
                         <h1 className="name">Felipe Asimbaya </h1>
-                        <h3 ref={text}>I'm a Fronted Developer</h3>
+                        <h3 ref={text}>Soy Desarrollador Fullstack</h3>
                         <a className="contact_me" href="#contact">
                               Contact me
                         </a>

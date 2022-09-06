@@ -4,7 +4,7 @@ const Services = () => {
       return (
             <section className="services" id="services">
                   <div className="center">
-                        <h2>My Awesome Service</h2>
+                        <h2>Mis Servicios</h2>
                         <p>
                               There are manu variations of passages of Lorem Ipsum available, but the <br /> majority have suffered alteration
                         </p>

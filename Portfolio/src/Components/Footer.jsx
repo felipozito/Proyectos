@@ -19,8 +19,13 @@ const Footer = () => {
             <section id="contact">
                   <div className="contact">
                         <div className="contact-form">
-                              <h2>Hire Me</h2>
-                              <p>I'm availble for Freelance work, Connect with me via phone: 098344314 of felipeasimbaya31@gmail.com</p>
+                              <h2>Contrateme</h2>
+                              <p>
+                                    Estoy disponible para trabajos de desarrollo y proyectos, con muchas ganas de aprender, crecer y aportar lo mejor
+                                    de mi.
+                                    <br />
+                                    +59398344314 or felipeasimbaya31@gmail.com
+                              </p>
                               <form onSubmit={sendMail}>
                                     <input type="" placeholder="Your Name" required id="name" name="user_name" />
                                     <input type="email" id="mail" name="user_mail" placeholder="Your Email" required />

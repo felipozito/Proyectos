@@ -10,7 +10,8 @@ const Portfolio = () => {
                   <div className="center">
                         <h2>Portfolio</h2>
                         <p>
-                              There are manu variations of passages of Lorem Ipsum available, but the <br /> majority have suffered alteration
+                              Comparto alguno de mis proyectos como desarrollador web, usando un poco de las tecnologias actuales del mercado. <br />
+                              apoyame y juntos iremos por más.
                         </p>
                   </div>
                   <div className="portfolio-content">

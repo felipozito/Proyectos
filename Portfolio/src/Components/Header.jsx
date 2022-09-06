@@ -46,19 +46,19 @@ const Header = () => {
                   <div className={`bx ${navBar ? "bx-menu" : "bx-x"}`} id="menu-icon" onClick={openNavbar}></div>
                   <ul className="navbar" ref={navbar}>
                         <li>
-                              <a href="#home">Home</a>
+                              <a href="#home">Inicio</a>
                         </li>
                         <li>
-                              <a href="#about">About Us</a>
+                              <a href="#about">Acerca de mi</a>
                         </li>
                         <li>
-                              <a href="#services">Services</a>
+                              <a href="#services">Servicios</a>
                         </li>
                         <li>
                               <a href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                              <a href="#contact">Contact Us</a>
+                              <a href="#contact">Contactame</a>
                         </li>
                   </ul>
                   <a href="./Assets/CV_Felipe_Asimbaya.pdf" target="_blank" download="CV_FelipeAsimbaya.pdf" className="h-btn">

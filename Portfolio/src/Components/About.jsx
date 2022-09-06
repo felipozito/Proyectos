@@ -37,7 +37,7 @@ const About = () => {
             },
       ];
       const resumen =
-            "I'm a Front-End web Developer, I can provide clean code and pixel perfect design. I also make the website more & more intereactive with web animation. I can provide clean code and pixelperdect design. I also maje the website more & more interactive with web animations. A responsive desgin makes your website accesible to all users, regardless of their device.";
+            "Profesional conformación en Desarrollo Web Fronted,Redes e Ingeniero en Telecomunicaciones, que aspira encontrar un puesto laboral en el que pueda desarrollar mis habilidades y mi pasión. Tecnológicamente hábil, ofrezco experiencia en desarrollo web tanto fronted como backend, programas de tecnología y habilidades informáticas avanzadas.";
 
       return (
             <section id="about">
@@ -46,7 +46,7 @@ const About = () => {
                               <img src={img} alt="imgAbout" />
                         </div>
                         <div className="about-text">
-                              <h2>About Me</h2>
+                              <h2>Acerca de mi</h2>
                               <h5>
                                     Developer <span>& Desginer</span>
                               </h5>
@@ -61,7 +61,7 @@ const About = () => {
                                           Expereriencia
                                     </h5>
                               </div>
-                              {tab == 1 ? <p>{resumen}</p> : tab == 2 ? <Education /> : <Experience />}
+                              {tab == 1 ? <p style={{ textAlign: "justify" }}>{resumen}</p> : tab == 2 ? <Education /> : <Experience />}
                               <a href="#" className="btn" download="CV_FelipeAsimbaya.pdf">
                                     Download CV
                               </a>
