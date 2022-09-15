@@ -256,6 +256,7 @@ section {
       justify-content: center;
       gap: 1em;
 }
+
 .about_topic {
       display: flex;
       justify-content: space-evenly;
@@ -277,11 +278,16 @@ section {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
-      min-height: 20px;
+      height: 60px;
       border-radius: 30px;
       padding-left: 10px;
       box-shadow: 1px 1px 8px var(--main-color);
       position: relative;
+      transition: 0.8s ease all;
+}
+.topic_card:hover {
+      height: 240px;
+      overflow: hidden;
 }
 .topic_card::after {
       position: absolute;
@@ -567,7 +573,7 @@ section {
 }
 .contact-img img {
       max-width: 100%;
-      width: 700px;
+      width: 600px;
       height: auto;
       border-radius: 10px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/contact.jpg";
+import img from "../assets/5.jpg";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
@@ -19,12 +19,11 @@ const Footer = () => {
             <section id="contact">
                   <div className="contact">
                         <div className="contact-form">
-                              <h2>Contrateme</h2>
+                              <h2>Contactame</h2>
                               <p>
-                                    Estoy disponible para trabajos de desarrollo y proyectos, con muchas ganas de aprender, crecer y aportar lo mejor
-                                    de mi.
+                                    Estoy disponible para trabajos de desarrollo y proyectos, con muchas ganas de Brindar soluciones y ayudar al
+                                    crecimientos de las empresas.
                                     <br />
-                                    +59398344314 or felipeasimbaya31@gmail.com
                               </p>
                               <form onSubmit={sendMail}>
                                     <input type="" placeholder="Your Name" required id="name" name="user_name" />
