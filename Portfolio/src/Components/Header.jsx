@@ -1,19 +1,43 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Header = () => {
       const [darkModeState, setDarkModeState] = useState(true);
+      const [color, setColor] = useState();
       const [sticky, setSticky] = useState(false);
       const [navBar, setNavBar] = useState(true);
       const rootStyle = document.documentElement.style;
       const navbar = useRef();
       const headerColor = useRef();
+
+      useEffect(() => {
+            const color = localStorage.getItem("Portfolio-Color");
+            if (color) {
+                  rootStyle.setProperty("--main-color", color);
+            } else {
+                  rootStyle.setProperty("--main-color", "#f9004d");
+            }
+            const dark = localStorage.getItem("theme");
+            console.log(dark);
+            if (dark == "darkMode") {
+                  document.body.classList.remove("darkMode");
+                  localStorage.setItem("theme", "darkMode");
+                  setDarkModeState(false);
+            } else if (dark == "lightMode") {
+                  document.body.classList.add("darkMode");
+                  localStorage.setItem("theme", "lightMode");
+                  setDarkModeState(false);
+            } else {
+                  localStorage.setItem("theme", "darkMode");
+            }
+      }, []);
       const darkmode = () => {
             setDarkModeState(!darkModeState);
             document.body.classList.toggle("darkMode");
-            if (darkModeState) {
+            const dark = localStorage.getItem("theme");
+            if (dark == "darkMode") {
+                  localStorage.setItem("theme", "lightMode");
+            } else if (dark == "lightMode") {
                   localStorage.setItem("theme", "darkMode");
-            } else {
-                  localStorage.removeItem("theme");
             }
       };
       const openNavbar = () => {
@@ -36,6 +60,8 @@ const Header = () => {
       const changeColor = (e) => {
             rootStyle.setProperty("--main-color", e.target.dataset.color);
             localStorage.setItem("Portfolio-Color", e.target.dataset.color);
+            setColor(e.target.dataset.color);
+            console.log(color);
       };
 
       return (
@@ -72,7 +98,7 @@ const Header = () => {
                         <div className="colors_item colors_item--green" data-color="hsl(116, 80%, 40%)" onClick={changeColor}></div>
                         <div className="colors_item colors_item--purple" data-color="hsl(278, 84%, 56%)" onClick={changeColor}></div>
                   </div>
-                  <i className={`bx ${darkModeState ? "bxs-sun" : "bxs-moon"}`} onClick={darkmode}></i>
+                  <i className={`bx ${darkModeState ? "bxs-moon" : "bxs-sun"}`} onClick={darkmode}></i>
             </header>
       );
 };

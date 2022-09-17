@@ -30,7 +30,7 @@ const Footer = () => {
                                     <input type="email" id="mail" name="user_mail" placeholder="Your Email" required />
                                     <input type="phone" name="user_phone" id="phone" placeholder="Your Phone" required />
                                     <textarea id="text_mail" cols="30" rows="10" name="user_messages" placeholder="Your Message" required></textarea>
-                                    <button className="send">Submit</button>
+                                    <button className="send">Contactar</button>
                               </form>
                         </div>
                         <div className="contact-img">
