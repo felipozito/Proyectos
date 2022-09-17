@@ -3,6 +3,7 @@ import img from "../assets/1.jpg";
 import Education from "./Education";
 import Experience from "./Experience";
 import Skill_item from "./Skill_item";
+import cv from "../assets/CV_FullStack.pdf";
 import academlo from "../assets/Academlo.png";
 import ups from "../assets/ups.png";
 
@@ -62,7 +63,7 @@ const About = () => {
                                     </h5>
                               </div>
                               {tab == 1 ? <p style={{ textAlign: "justify" }}>{resumen}</p> : tab == 2 ? <Education /> : <Experience />}
-                              <a href="#" className="btn" download="CV_FelipeAsimbaya.pdf">
+                              <a className="btn" href={cv} target="_blank" download>
                                     Download CV
                               </a>
                         </div>

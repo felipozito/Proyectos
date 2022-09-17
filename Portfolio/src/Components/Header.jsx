@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
+import cv from "../assets/CV_FullStack.pdf";
 
 const Header = () => {
-      const [darkModeState, setDarkModeState] = useState(true);
+      const [darkModeState, setDarkModeState] = useState(false);
       const [color, setColor] = useState();
       const [sticky, setSticky] = useState(false);
       const [navBar, setNavBar] = useState(true);
@@ -25,7 +26,7 @@ const Header = () => {
             } else if (dark == "lightMode") {
                   document.body.classList.add("darkMode");
                   localStorage.setItem("theme", "lightMode");
-                  setDarkModeState(false);
+                  setDarkModeState(true);
             } else {
                   localStorage.setItem("theme", "darkMode");
             }
@@ -87,7 +88,7 @@ const Header = () => {
                               <a href="#contact">Contactame</a>
                         </li>
                   </ul>
-                  <a href="./Assets/CV_Felipe_Asimbaya.pdf" target="_blank" download="CV_FelipeAsimbaya.pdf" className="h-btn">
+                  <a href={cv} target="_blank" download className="h-btn">
                         CV
                   </a>
                   <div className="colors" id="toggle-colors">
